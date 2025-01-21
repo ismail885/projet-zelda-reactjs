@@ -36,11 +36,9 @@ export default function FetchMonster() {
                           <p>{monster.description}</p>
                           <Comment/>
                         </>
-                        
                       )}
-                      
                     </div>
-                  </div>               
+                  </div>
                 ))}
             </div>
           );

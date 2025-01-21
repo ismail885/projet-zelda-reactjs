@@ -31,6 +31,15 @@ export default function Home() {
             <Link to="/monsters">
                 <button>Voir les monstres</button>
             </Link>
+            <Link to="/dungeons">
+                <button>Voir les donjons</button>
+            </Link>
+            <Link to="/items">
+                <button>Voir les objets</button>
+            </Link>
+            <Link to="/places">
+                <button>Voir les lieux</button>
+            </Link>
             <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
             <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
         </>

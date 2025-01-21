@@ -4,13 +4,15 @@ import FetchGames from "../components/FetchGame/FetchGame";
 import FetchBosses from "../components/FetchBosses/FetchBosses";
 import FetchCharacters from "../components/FetchCharacters/FetchCharacters";
 import FetchMonster from "../components/FetchMonster/FetchMonster";
+import FetchDungeons from "../components/FetchDungeons/FetchDungeons";
+import FetchItems from "../components/FetchItems/FetchItems";
+import FetchPlaces from "../components/FetchPlaces/FetchPlaces";
 import Home from "../pages/Home";
 import Connect from "../components/Connect/Connect";
 import HomePage from "../pages/HomePage";
 import ProductsPage from "../pages/ProductsPage";
 import ContactPage from "../pages/ContactPage";
 import NotFoundPage from "../pages/NotFoundPage";
-// import ProtectedRoute from "../auth/ProtectedRoute";
 
 
 export default function Router() {
@@ -32,6 +34,9 @@ export default function Router() {
       <Route path="/bosses" element={<FetchBosses />} />
       <Route path="/characters" element={<FetchCharacters />} />
       <Route path="/monsters" element={<FetchMonster />} />
+      <Route path="/dungeons" element={<FetchDungeons />} />
+      <Route path="/items" element={<FetchItems />} />
+      <Route path="/places" element={<FetchPlaces />} />
     </Routes>
   );
 }
