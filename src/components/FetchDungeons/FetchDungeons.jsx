@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import ApiFetch from "../../.api/ApiFetch";
+import ApiFetch from "../../api/ApiFetch";
 import "../../pages/home.scss";
 import { Comment } from "../Comments/Comments"; 
 
