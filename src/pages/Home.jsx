@@ -18,7 +18,7 @@ export default function Home() {
                     <button>Se connecter</button>
                 </Link>
             )}
-
+            <br /><br />
             <Link to="/games">
                 <button>Voir les jeux</button>
             </Link>
