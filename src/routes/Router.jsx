@@ -7,9 +7,8 @@ import FetchMonster from "../components/FetchMonster/FetchMonster";
 import FetchDungeons from "../components/FetchDungeons/FetchDungeons";
 import FetchItems from "../components/FetchItems/FetchItems";
 import FetchPlaces from "../components/FetchPlaces/FetchPlaces";
-import Home from "../pages/Home";
 import Connect from "../components/Connect/Connect";
-import HomePage from "../pages/HomePage";
+import Home from "../pages/Home";
 import ProductsPage from "../pages/ProductsPage";
 import ContactPage from "../pages/ContactPage";
 import NotFoundPage from "../pages/NotFoundPage";
@@ -25,7 +24,6 @@ export default function Router() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/" element={<HomePage />} />
       <Route path="/products" element={<ProtectedRoute><ProductsPage /></ProtectedRoute>} />
       <Route path="/contact" element={<ContactPage />} />
       <Route path="*" element={<NotFoundPage />} />

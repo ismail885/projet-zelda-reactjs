@@ -1,4 +1,4 @@
-import { useLocation, useNavigate } from "react-router";
+import { useLocation, useNavigate, Link } from "react-router";
 import "./header.scss";
 
 export default function Header() {
@@ -22,8 +22,14 @@ export default function Header() {
           />
         </a>
       )}
-      {/* <img className="header__logo" src="zeldareact.png" alt="Logo Zelda" /> */}
-      <h1 className="header__title">{displayName}</h1>
+      <div className="header__titleContainer">
+        <h1 className="header__title">{displayName}</h1>
+        {displayName === "Accueil" && (
+          <Link to="/contact">
+            <button className="header__contactButton">Contact</button>
+          </Link>
+        )}
+      </div>
     </div>
   );
 }

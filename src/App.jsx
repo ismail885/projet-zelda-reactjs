@@ -1,15 +1,13 @@
-import { useState } from "react";
-import Router from "./routes/Router";
-import "./App.css";
+import React from "react";
 import { AuthProvider } from "./auth/AuthProvider";
+import AppRouter from "./routes/Router";
+import "./App.css";
 
 function App() {
   return (
-    <>
     <AuthProvider>
-      <Router />
+      <AppRouter />
     </AuthProvider>
-    </>
   );
 }
 

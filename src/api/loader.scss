@@ -3,89 +3,48 @@
 .container {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 100vw;
   height: 100vh;
-  background-color: #286dbb;
-  font-family: pocketMonk, Arial, sans-serif;
-
-  &__content {
-    width: 50%;
-  }
+  background-color: #1e1e1e;
+  font-family: 'Roboto', sans-serif;
+  padding: 0 20px; // Add padding to ensure responsiveness
+  box-sizing: border-box; // Include padding in the element's total width and height
 }
 
 .loader {
-  width: 50%;
-  height: 50%;
-  background-color: #fff;
-  transform: rotateZ(45deg);
-  perspective: 1000px;
+  width: 80px;
+  height: 80px;
+  border: 12px solid #f3f3f3;
+  border-top: 12px solid #ff4500;
   border-radius: 50%;
-  color: #ffcc01;
-}
-.loader:before,
-.loader:after {
-  content: "";
-  position: absolute;
-  width: inherit;
-  height: inherit;
-  border-radius: 50%;
-  transform: rotateX(70deg);
-  animation: 1s spin linear infinite;
-}
-.loader::after {
-  content: "En chargement ...";
-  font-size: 6rem;
-  text-align: center;
-}
-.loader:after {
-  font-size: 5rem;
-  color: #fff;
-  transform: rotateY(70deg);
-  animation-delay: 0.4s;
-}
-
-@keyframes rotate {
-  0% {
-    transform: translate(-50%, -50%) rotateZ(0deg);
-  }
-  100% {
-    transform: translate(-50%, -50%) rotateZ(360deg);
-  }
-}
-
-@keyframes rotateccw {
-  0% {
-    transform: translate(-50%, -50%) rotate(0deg);
-  }
-  100% {
-    transform: translate(-50%, -50%) rotate(-360deg);
-  }
+  animation: spin 1.5s linear infinite;
+  box-shadow: 0 0 15px rgba(255, 69, 0, 0.5);
 }
 
 @keyframes spin {
-  0%,
+  0% {
+    transform: rotate(0deg);
+  }
   100% {
-    box-shadow: 0.2em 0px 0 0px currentcolor;
+    transform: rotate(360deg);
   }
-  12% {
-    box-shadow: 0.2em 0.2em 0 0 currentcolor;
+}
+
+@media (max-width: 768px) {
+  .loader {
+    width: 60px;
+    height: 60px;
+    border: 10px solid #f3f3f3;
+    border-top: 10px solid #ff4500;
   }
-  25% {
-    box-shadow: 0 0.2em 0 0px currentcolor;
-  }
-  37% {
-    box-shadow: -0.2em 0.2em 0 0 currentcolor;
-  }
-  50% {
-    box-shadow: -0.2em 0 0 0 currentcolor;
-  }
-  62% {
-    box-shadow: -0.2em -0.2em 0 0 currentcolor;
-  }
-  75% {
-    box-shadow: 0px -0.2em 0 0 currentcolor;
-  }
-  87% {
-    box-shadow: 0.2em -0.2em 0 0 currentcolor;
+}
+
+@media (max-width: 480px) {
+  .loader {
+    width: 40px;
+    height: 40px;
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #ff4500;
   }
 }
