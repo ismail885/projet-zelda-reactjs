@@ -9,22 +9,14 @@ import FetchItems from "../components/FetchItems/FetchItems";
 import FetchPlaces from "../components/FetchPlaces/FetchPlaces";
 import Connect from "../components/Connect/Connect";
 import Home from "../pages/Home";
-import ProductsPage from "../pages/ProductsPage";
 import ContactPage from "../pages/ContactPage";
 import NotFoundPage from "../pages/NotFoundPage";
 
 
 export default function Router() {
-
-  const ProtectedRoute = ({ children }) => {
-    const { isAuthenticated } = useContext(AuthContext);
-    return isAuthenticated ? children : <Navigate to="/" />;
-  };
-
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/products" element={<ProtectedRoute><ProductsPage /></ProtectedRoute>} />
       <Route path="/contact" element={<ContactPage />} />
       <Route path="*" element={<NotFoundPage />} />
       <Route path="/connect" element={<Connect />} />
