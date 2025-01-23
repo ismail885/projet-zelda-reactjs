@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import { useNavigate } from "react-router";
-// import "./NotFoundPage.scss"; // Import the SCSS file
 
 const NotFoundPage = () => {
   const navigate = useNavigate();

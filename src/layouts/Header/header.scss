@@ -45,3 +45,25 @@
         }
     }
 }
+
+.header__titleContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    .header__contactButton {
+        background-color: #ffd700; // Doré pour correspondre au thème
+        color: #0b3d0b; // Texte vert sombre
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+
+        &:hover {
+            background-color: #e6c200; // Légèrement plus sombre au survol
+            transform: scale(1.1); // Zoom sur le bouton au survol
+        }
+    }
+}
