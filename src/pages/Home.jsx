@@ -41,7 +41,7 @@ export default function Home() {
                 <button>Voir les lieux</button>
             </Link>
             <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-            <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+            <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
         </>
 
     );
