@@ -5,7 +5,7 @@
   justify-content: center;
   width: 100vw;
   height: 100vh;
-  background-color: #286dbb;
+  background-color: #1E7947; // Vert Hylien
   font-family: pocketMonk, Arial, sans-serif;
 
   &__content {
@@ -13,130 +13,37 @@
   }
 }
 
-.loader {
-  width: 50%;
-  height: 50%;
-  background-color: #fff;
-  transform: rotateZ(45deg);
-  perspective: 1000px;
-  border-radius: 50%;
-  color: #ffcc01;
-}
-
-.loader:before,
-.loader:after {
-  content: "";
-  position: absolute;
-  width: inherit;
-  height: inherit;
-  border-radius: 50%;
-  transform: rotateX(70deg);
-  animation: 1s spin linear infinite;
-}
-
-.loader::after {
-  content: "En chargement ...";
-  font-size: 6rem;
-  text-align: center;
-}
-
-.loader:after {
-  font-size: 5rem;
-  color: #fff;
-  transform: rotateY(70deg);
-  animation-delay: 0.4s;
-}
-
-@keyframes rotate {
-  0% {
-    transform: translate(-50%, -50%) rotateZ(0deg);
-  }
-
-  100% {
-    transform: translate(-50%, -50%) rotateZ(360deg);
-  }
-}
-
-@keyframes rotateccw {
-  0% {
-    transform: translate(-50%, -50%) rotate(0deg);
-  }
-
-  100% {
-    transform: translate(-50%, -50%) rotate(-360deg);
-  }
-}
-
-@keyframes spin {
-
-  0%,
-  100% {
-    box-shadow: 0.2em 0px 0 0px currentcolor;
-  }
-
-  12% {
-    box-shadow: 0.2em 0.2em 0 0 currentcolor;
-  }
-
-  25% {
-    box-shadow: 0 0.2em 0 0px currentcolor;
-  }
-
-  37% {
-    box-shadow: -0.2em 0.2em 0 0 currentcolor;
-  }
-
-  50% {
-    box-shadow: -0.2em 0 0 0 currentcolor;
-  }
-
-  62% {
-    box-shadow: -0.2em -0.2em 0 0 currentcolor;
-  }
-
-  75% {
-    box-shadow: 0px -0.2em 0 0 currentcolor;
-  }
-
-  87% {
-    box-shadow: 0.2em -0.2em 0 0 currentcolor;
-  }
-}
-
-
 .home {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: #0b3d0b; // Fond vert pour correspondre au thème Zelda
-  color: #ffd700; // Texte en doré pour s'harmoniser avec Zelda
+  background-color: #1E7947; // Vert Hylien
+  color: #FFD700; // Doré Triforce
   font-family: "Triforce", sans-serif;
   text-align: center;
   padding: 20px;
 
   p {
-    font-size: 24px;
-    text-shadow: 2px 2px 5px #000; // Ombre portée pour donner un effet Zelda
     margin-bottom: 20px;
   }
 
   button {
-    background-color: #ffd700; // Boutons avec une couleur dorée
-    color: #0b3d0b; // Texte des boutons en vert foncé
+    background-color: #1E7947; // Vert Hylien
+    color: #FFD700; // Doré Triforce
     font-family: "Triforce", sans-serif;
     font-size: 18px;
     padding: 10px 20px;
     margin: 10px;
-    border: 2px solid #ffd700; // Bordure dorée
+    border: 2px solid #FFD700; // Bordure dorée
     border-radius: 5px; // Coins arrondis pour les boutons
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
 
     &:hover {
-      background-color: #0b3d0b; // Changement de couleur au survol
-      color: #ffd700;
+      background-color: #FFD700; // Doré Triforce
+      color: #1E7947; // Vert Hylien
       transform: scale(1.05); // Effet de zoom léger au survol
     }
 
@@ -162,8 +69,8 @@
   align-items: center;
   justify-content: center;
   padding: 20px;
-  background-color: #0b3d0b;
-  color: #ffd700;
+  background-color: #1E7947; // Vert Hylien
+  color: #FFD700; // Doré Triforce
   font-family: "Triforce", sans-serif;
   text-align: center;
 }
@@ -176,8 +83,8 @@
 }
 
 .fetch-item {
-  background-color: #ffd700;
-  color: #0b3d0b;
+  background-color: #FFD700; // Doré Triforce
+  color: #000; // Noir pour une meilleure visibilité
   border: 2px solid #ffd700;
   border-radius: 5px;
   padding: 10px;
@@ -186,14 +93,15 @@
   transition: background-color 0.3s ease, transform 0.2s ease;
 
   &:hover {
-    background-color: #0b3d0b;
-    color: #ffd700;
+    background-color: #1E7947; // Vert Hylien
+    color: #FFD700; // Doré Triforce
     transform: scale(1.05);
   }
 }
 
 .fetch-item-content {
   text-align: left;
+  color: #000; // Noir pour une meilleure visibilité
 }
 
 .zelda {

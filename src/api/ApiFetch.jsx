@@ -27,29 +27,15 @@ export default function ApiFetch({ url, children }) {
   if (isLoading) {
     return (
       <div className="container">
-         <div className="loader">
-        <div className="loading-text">
-          Loading<span className="dot">.</span><span className="dot">.</span
-          ><span className="dot">.</span>
-        </div>
-        <div className="loading-bar-background">
-          <div className="loading-bar">
-            <div className="white-bars-container">
-              <div className="white-bar"></div>
-              <div className="white-bar"></div>
-              <div className="white-bar"></div>
-              <div className="white-bar"></div>
-              <div className="white-bar"></div>
-              <div className="white-bar"></div>
-              <div className="white-bar"></div>
-              <div className="white-bar"></div>
-              <div className="white-bar"></div>
-              <div className="white-bar"></div>
-            </div>
-          </div>
+        <div class="wrapper">
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="shadow"></div>
+          <div class="shadow"></div>
+          <div class="shadow"></div>
         </div>
       </div>
-      </div >
     );
   }
 

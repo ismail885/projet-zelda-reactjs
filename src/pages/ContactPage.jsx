@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./contact.scss";
 
 const ContactPage = () => {
   const [submitted, setSubmitted] = useState(false);
@@ -12,7 +13,7 @@ const ContactPage = () => {
   };
 
   return (
-    <main>
+    <main className="contact">
       <h1>Contactez-nous</h1>
       {submitted ? (
         <p>Merci, {name}, de nous avoir contactés !</p>

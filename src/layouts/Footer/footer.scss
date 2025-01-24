@@ -1,14 +1,15 @@
 @import "../../index.css";
 
 .footer {
+    width: 100%; // Full width
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-content: space-between;
     padding: 2rem;
     margin-bottom: 3rem;
-    background-color: #0b3d0b; // Same dark green color as the header
-    color: #ffd700; // Same gold color as the header
+    background-color: #1E7947; // Vert Hylien
+    color: #FFD700; // Doré Triforce
     box-shadow: 0 1rem 1rem rgba(11, 61, 11, 0.5); // Adjusted shadow color to match the dark green
 
     .footer-content {
