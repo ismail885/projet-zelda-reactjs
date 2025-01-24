@@ -42,21 +42,8 @@
     linear-gradient(#0000        calc(50% - 5px),currentColor 0 calc(50% + 5px),#0000        0) right/2px 100%;
   background-repeat:no-repeat;
 }
-
 @keyframes l5 {
     100% {background-size:120%}
-}
-@keyframes l5 {
-    100% {background-size:120%}
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
 }
 
 @media (max-width: 768px) {
