@@ -1,11 +1,13 @@
 import { createContext, useState, useContext, useEffect } from "react";
 import Cookies from "js-cookie";
-
+import { useNavigate } from "react-router"; 
 export const AuthContext = createContext(undefined);
 
 export function AuthProvider({ children }) {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
+  const navigate = useNavigate(); 
+
   useEffect(() => {
     const storedUser = Cookies.get("user");
     if (storedUser) {
@@ -19,6 +21,7 @@ export function AuthProvider({ children }) {
       const newUser = { username };
       setUser(newUser);
       Cookies.set("user", JSON.stringify(newUser), { expires: 1 });
+      navigate("/");
     } else {
       alert("Identifiants incorrects");
     }
