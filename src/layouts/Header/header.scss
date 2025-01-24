@@ -1,11 +1,12 @@
 .header {
-    width: 100%; // Full width
+    width: 100%;
     display: flex;
     align-items: center;
-    background-color: #1E7947; // Vert Hylien
-    color: #FFD700; // Doré Triforce
+    background-color: #1E7947;
+    color: #FFD700;
     padding: 10px 20px;
     border-bottom: 3px solid #ffd700;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
     &__arrowToLeft {
         width: 30px;
@@ -15,23 +16,22 @@
         transition: transform 0.3s ease, filter 0.3s ease;
 
         &:hover {
-            transform: scale(1.2); // Zoom sur l'icône au survol
+            transform: scale(1.2);
             filter: brightness(1.5);
         }
     }
 
     &__title {
-        font-family: "Triforce", sans-serif; // Police personnalisée pour un style Zelda (utilisez une police similaire si possible)
+        font-family: "Triforce", sans-serif;
         font-size: 24px;
         text-transform: uppercase;
-        text-shadow: 2px 2px 5px #000; // Effet lumineux
+        text-shadow: 2px 2px 5px #000;
         letter-spacing: 2px;
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
 
-    // Styles pour un affichage réactif
     @media (max-width: 768px) {
         flex-direction: column;
         text-align: center;
@@ -54,18 +54,18 @@
     width: 100%;
 
     .header__contactButton {
-        background-color: #1E7947; // Vert Hylien
-        color: #FFD700; // Doré Triforce
-        border: 2px solid #FFD700; // Bordure dorée
+        background-color: #1E7947;
+        color: #FFD700;
+        border: 2px solid #FFD700;
         padding: 10px 20px;
         font-size: 16px;
         cursor: pointer;
         transition: background-color 0.3s ease, transform 0.3s ease;
 
         &:hover {
-            background-color: #FFD700; // Doré Triforce
-            color: #1E7947; // Vert Hylien
-            transform: scale(1.1); // Zoom sur le bouton au survol
+            background-color: #FFD700;
+            color: #1E7947;
+            transform: scale(1.1);
         }
     }
 }
@@ -119,4 +119,3 @@ button {
   button:active {
     transform: scale(0.97);
   }
-  

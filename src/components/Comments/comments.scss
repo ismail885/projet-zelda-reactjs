@@ -1,0 +1,79 @@
+.comments-section {
+  background-color: #1E7947;
+  color: #FFD700;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  h3 {
+    font-family: "Triforce", sans-serif;
+    text-shadow: 2px 2px 5px #000;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    textarea {
+      width: 100%;
+      max-width: 600px;
+      padding: 10px;
+      border-radius: 5px;
+      border: 2px solid #FFD700;
+      font-family: "Triforce", sans-serif;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    button {
+      background-color: #1E7947;
+      color: #FFD700;
+      font-family: "Triforce", sans-serif;
+      font-size: 18px;
+      padding: 10px 20px;
+      border: 2px solid #FFD700;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+
+      &:hover {
+        background-color: #FFD700;
+        color: #1E7947;
+        transform: scale(1.05);
+      }
+
+      &:active {
+        background-color: #9e7e3a;
+        color: #fff;
+      }
+    }
+  }
+
+  .comments-list {
+    margin-top: 20px;
+
+    .comment {
+      background-color: #FFD700;
+      color: #1E7947;
+      border: 2px solid #FFD700;
+      border-radius: 5px;
+      padding: 10px;
+      margin-bottom: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+      strong {
+        font-family: "Triforce", sans-serif;
+      }
+
+      small {
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      p {
+        margin: 0;
+      }
+    }
+  }
+}

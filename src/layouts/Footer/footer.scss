@@ -1,16 +1,16 @@
 @import "../../index.css";
 
 .footer {
-    width: 100%; // Full width
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-content: space-between;
     padding: 2rem;
     margin-bottom: 3rem;
-    background-color: #1E7947; // Vert Hylien
-    color: #FFD700; // Doré Triforce
-    box-shadow: 0 1rem 1rem rgba(11, 61, 11, 0.5); // Adjusted shadow color to match the dark green
+    background-color: #1E7947;
+    color: #FFD700;
+    box-shadow: 0 1rem 1rem rgba(11, 61, 11, 0.5);
 
     .footer-content {
         display: flex;
@@ -39,7 +39,7 @@
                         transition: transform 0.3s ease, filter 0.3s ease;
 
                         &:hover {
-                            transform: scale(1.2); // Zoom on the link when hovered
+                            transform: scale(1.2);
                             filter: brightness(1.5);
                         }
                     }

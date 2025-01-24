@@ -2,45 +2,45 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start; // Align to the top
+  justify-content: flex-start;
   height: 100vh;
-  background-color: #1E7947; // Vert Hylien
-  color: #FFD700; // Doré Triforce
+  background-color: #1E7947;
+  color: #FFD700;
   font-family: "Triforce", sans-serif;
   text-align: center;
   padding: 20px;
 
   p {
     font-size: 24px;
-    text-shadow: 2px 2px 5px #000; // Ombre portée pour donner un effet Zelda
+    text-shadow: 2px 2px 5px #000;
     margin-bottom: 20px;
   }
 
   button {
-    background-color: #1E7947; // Vert Hylien
-    color: #FFD700; // Doré Triforce
+    background-color: #1E7947;
+    color: #FFD700;
     font-family: "Triforce", sans-serif;
     font-size: 18px;
     padding: 10px 20px;
     margin: 10px;
-    border: 2px solid #FFD700; // Bordure dorée
-    border-radius: 5px; // Coins arrondis pour les boutons
+    border: 2px solid #FFD700;
+    border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
 
     &:hover {
-      background-color: #FFD700; // Doré Triforce
-      color: #1E7947; // Vert Hylien
-      transform: scale(1.05); // Effet de zoom léger au survol
+      background-color: #FFD700;
+      color: #1E7947;
+      transform: scale(1.05);
     }
 
     &:active {
-      background-color: #9e7e3a; // Couleur plus sombre quand le bouton est pressé
+      background-color: #9e7e3a;
       color: #fff;
     }
   }
 
   a {
-    text-decoration: none; // Enlever les soulignements sur les liens
+    text-decoration: none;
   }
 }
