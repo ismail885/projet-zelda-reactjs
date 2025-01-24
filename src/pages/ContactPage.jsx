@@ -33,7 +33,9 @@ const ContactForm = () => {
       <input type="text" name="from_name" required />
 
       <label>Email :</label>
-      <input type="email" name="to_name" required />
+      <input type="email" name="user_email" required />
+
+      <input type="hidden" name="to_name" value="Isma" />
 
       <label>Message :</label>
       <textarea name="message" required />
