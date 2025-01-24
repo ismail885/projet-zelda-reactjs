@@ -5,12 +5,13 @@ export const AuthContext = createContext(undefined);
 
 export function AuthProvider({ children }) {
   const [user, setUser] = useState(null);
-
+  const [loading, setLoading] = useState(true);
   useEffect(() => {
     const storedUser = Cookies.get("user");
     if (storedUser) {
       setUser(JSON.parse(storedUser));
     }
+    setLoading(false); 
   }, []);
 
   const login = (username, password) => {
@@ -28,6 +29,10 @@ export function AuthProvider({ children }) {
     Cookies.remove("user");
   };
 
+  if (loading) {
+    return <div>Chargement...</div>;
+  }
+
   return (
     <AuthContext.Provider value={{ user, login, logout }}>
       {children}
@@ -38,7 +43,7 @@ export function AuthProvider({ children }) {
 export function useAuth() {
   const context = useContext(AuthContext);
   if (!context) {
-    throw new Error("Authentification impossible");
+    throw new Error("useAuth must be used within an AuthProvider");
   }
   return context;
 }
