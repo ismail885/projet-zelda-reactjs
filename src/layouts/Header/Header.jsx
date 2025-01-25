@@ -25,13 +25,13 @@ export default function Header() {
       <div className="header__titleContainer">
         <h1 className="header__title">{displayName}</h1>
         {displayName === "Accueil" && (
-          <Link to="/contact">
-            <button>
-              <span className="transition"></span>
-              <span className="gradient"></span>
-              <span className="label">Contact</span>
-            </button>
-          </Link>
+            <Link to="/contact">
+              <button>
+                <span className="transition"></span>
+                <span className="gradient"></span>
+                <span className="label">Contact</span>
+              </button>
+            </Link>
         )}
       </div>
     </div>
