@@ -17,6 +17,7 @@ export default function FetchGames() {
           <div className="fetch-list">
             {data
               .filter((game) => game.name)
+              .sort((a, b) => new Date(a.released_date) - new Date(b.released_date))
               .map((game) => (
                 <div key={game.id} className="fetch-item">
                   <div className="fetch-item-content">
