@@ -1,9 +1,5 @@
 body {
   background-color: #1E7947; 
-  background-image: url('/path/to/your/background-image.jpg'); /* Add your background image path */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 #root {
