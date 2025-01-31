@@ -19,6 +19,7 @@ export default function Home() {
                 </Link>
             )}
             <br /><br />
+            <p class="zelda-welcome">Bienvenue dans l'univers de Zelda</p>
             <Link to="/games">
                 <button>Voir les jeux</button>
             </Link>

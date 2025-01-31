@@ -11,6 +11,10 @@
     background-color: #1E7947;
     color: #FFD700;
     box-shadow: 0 1rem 1rem rgba(11, 61, 11, 0.5);
+    background-image: url('/path/to/your/background-image.jpg'); /* Add your background image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
     .footer-content {
         display: flex;

@@ -9,6 +9,10 @@
   font-family: "Triforce", sans-serif;
   text-align: center;
   padding: 20px;
+  background-image: url('/path/to/your/background-image.jpg'); /* Add your background image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 
   h1 {
     font-size: 36px;
